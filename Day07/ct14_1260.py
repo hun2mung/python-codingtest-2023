@@ -14,7 +14,7 @@ for i in range(N+1):
 
 visited = [False]*(N+1)
 
-# DFS함수 정의
+# DFS함수 정의 - 스택
 def DFS(v):
     print(v, end=' ')
     visited[v] = True   # 방문
@@ -22,7 +22,7 @@ def DFS(v):
         if not visited[i]:
             DFS(i)
 
-# BFS 함수 정의
+# BFS 함수 정의 - 큐
 def BFS(v):
     q = Queue()
     q.put(v)
